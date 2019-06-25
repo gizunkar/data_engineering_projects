@@ -7,10 +7,10 @@ They keep their data currently in S3 buckets. The goal of this project is to bui
 ## Data Model
 
 We have two source datasets for this project, which are both stored in JSON format. 
- * Song Dataset: It contains metadata about a song and the artist of that song.
+ * Song Dataset: It contains metadata about songs and artists of songs.
  * Log Dataset: It contains logs on user activity on the app.
 
-In our target schema we have 1 fact table and 5 dimension tables. ER Diagram of data model is below
+ER diagram of data model is below.
 
 
 ![Image of ER Diagram](https://raw.githubusercontent.com/gizunkar/git_tutorial/master/aws_etl_er_diagram.png)
@@ -20,25 +20,12 @@ In our target schema we have 1 fact table and 5 dimension tables. ER Diagram of 
 
 1. **dl.cfg** : It's a configuration file which contains your IAM user and Access Key. 
 
-2. **etl.py** : 
-
-  * **Functions**
-  	* create_spark_session:
-  	* process_song_data:
-  	* process_log_data:
-  	* main
+2. **etl.py** : It processes data using Spark and loads it to S3 bucket.
 
 
 
 ## How to Run 
 
-Before you run codes, please make sure that 
-
-* You've created a S3 Bucket to write your result data. 
-* 
-
-
-You should run files in the following order. 
 
   ``` console
   import etl
