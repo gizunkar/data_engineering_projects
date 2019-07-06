@@ -77,3 +77,4 @@ Before run the DAG, please make sure that you have created following 3 variables
 	 * Password: Enter the password you created when launching your Redshift cluster.
 	 * Port: Enter 5439.
 
+Gizem Unkar
