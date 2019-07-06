@@ -17,7 +17,7 @@ In this project the task is first to read these 2 files from S3 and load into tw
 
 The graph of pipeline is below
 
-![Image of airflow graph](/home/gizem/Desktop/kod/udacity_data_engineering_nanodegree_projects/Project_5_Data_Pipeline_With_Apache_Airflow/img/sparkify_pipeline.png)
+![Image of airflow graph](https://github.com/gizunkar/data_engineering_projects/blob/master/Project_5_Data_Pipeline_With_Apache_Airflow/img/sparkify_pipeline.png?raw=true)
 
 
 To complete the project, four different operators are builded which are shortly explained below.
