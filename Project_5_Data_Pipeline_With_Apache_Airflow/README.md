@@ -55,7 +55,7 @@ Before run the DAG, please make sure that you have created following 3 variables
 
  * Variables : 
 
-|Name			| Value		
+|Key			| Value		
 | :---         	|        ---:  |			
 | s3_bucket    	| udacity-dend |
 | s3_log_prefix	| log_data	   |
