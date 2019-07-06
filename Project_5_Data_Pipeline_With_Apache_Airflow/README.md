@@ -1,5 +1,4 @@
-# Data Lakes with Spark 
-
+# Data Pipelines With Apache Airflow
 
 The company Sparkify provides a music streaming app to their users. The analytics team wants to understand what songs users are listening to by analyzing their songs and user activity data. 
 
@@ -17,7 +16,7 @@ In this project the task is first to read these 2 files from S3 and load into tw
 
 The graph of pipeline is below
 
-![Image of airflow graph](https://github.com/gizunkar/data_engineering_projects/blob/master/Project_5_Data_Pipeline_With_Apache_Airflow/img/sparkify_pipeline.png?raw=true)
+![Image of airflow graph](https://raw.githubusercontent.com/gizunkar/data_engineering_projects/master/Project_5_Data_Pipeline_With_Apache_Airflow/img/sparkify_pipeline.png)
 
 
 To complete the project, four different operators are builded which are shortly explained below.
