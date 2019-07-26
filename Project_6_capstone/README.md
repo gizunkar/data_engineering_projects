@@ -95,14 +95,14 @@ Also before run the DAG, please make sure that you have created necessary variab
 
 
 
-### My approach the problem differently under the following scenarios:
+#### My approach the problem differently under the following scenarios:
  * If the data was increased by 100x.
  In this case I might add another node to my cluster.
  * If the pipelines were run on a daily basis by 7am.
  Now my pipeline starts at 24:00 on a daily basis. I could easily change it to 7:00 from dag.
-* If the database needed to be accessed by 100+ people.
 
-### Explanation about the technologies choosen:
+
+#### Explanation about the technologies choosen:
 Since I have big amount of data I needed to process it in a distributed system. 
 I choosed Spark, because it lets you run programs up to 100x faster in memory, or 10x faster on disk, than Hadoop's Mapreduce.
 I choosed to run  my spark code on a EMR cluster with one master and 2 slave nodes. Because EMR launches clusters fast, it's affordable and reliable. 
