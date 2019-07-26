@@ -20,7 +20,7 @@ In my data model, there is one fact table (business reviews) and 4 dimensions (u
 
 The ER diagram of data model:
 
-![Image of ER Diagram graph](/home/gizem/Desktop/udend-capstone/documentation/img/er_diagram.png)
+![Image of ER Diagram graph](https://github.com/gizunkar/data_engineering_projects/blob/master/Project_6_capstone/img/dag.png?raw=true)
 
 
 ## ETL 
