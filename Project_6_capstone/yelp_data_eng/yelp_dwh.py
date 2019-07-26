@@ -7,8 +7,6 @@ import logging
 from pyspark.sql import Window
 from datetime import datetime
 
-#import configparser
-#import os
 
 
 def spark_session():
@@ -72,16 +70,6 @@ currentYear = datetime.now().year
 
 input_path = sys.argv[1]
 output_path = sys.argv[2]
-
-
-# input_path = "/home/gizem/Desktop/kod/__DATA__/input_data/yelp"
-# output_path = "/home/gizem/Desktop/kod/__DATA__/output_data/yelp_datalake"
-
-# config = configparser.ConfigParser()
-# config.read('/tmp/aws.cfg')
-#
-# os.environ['AWS_ACCESS_KEY_ID'] = config['AWS']['AWS_ACCESS_KEY_ID']
-# os.environ['AWS_SECRET_ACCESS_KEY'] = config['AWS']['AWS_SECRET_ACCESS_KEY']
 
 
 def cleaning_business(business_df):
