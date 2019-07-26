@@ -12,25 +12,24 @@ I used 3 JSON files as source and I developed a dimensional model to be able to 
  * business.json 
  * user.json
  * review.json
-[Link to source data dictionary](/home/gizem/Desktop/udend-capstone/documentation/data_dictionary.md)
-
+[Link to source data dictionary](https://github.com/gizunkar/data_engineering_projects/blob/master/Project_6_capstone/documents/data_dictionary.md)
 In my data model, there is one fact table (business reviews) and 4 dimensions (users, category, ambiance, state). 
 
-[Link to target data dictionary](/home/gizem/Desktop/udend-capstone/dimensional_model_data_dictionary.md)
+[Link to target data dictionary](https://github.com/gizunkar/data_engineering_projects/blob/master/Project_6_capstone/documents/dimensional_model_data_dictionary.md)
 
 The ER diagram of data model:
 
-![Image of ER Diagram graph](https://github.com/gizunkar/data_engineering_projects/blob/master/Project_6_capstone/img/dag.png?raw=true)
+![Image of ER Diagram graph](https://raw.githubusercontent.com/gizunkar/data_engineering_projects/master/Project_6_capstone/img/er_diagram.png)
 
 
 ## ETL 
 
-I read the source data files from a S3 bucket, after cleaning and transformation I store fact and dimensions in another S3 bucket for permanent storage and also copy these files into Redshift to run analytic queries and aggregations for visualization. I orcahstate this pipeline with Apache Airflow. I used Livy to submit spark application via Airflow. 
+The source data is extracted from S3, the data transformation is developed with Pyspark on amazon EMR and target data schema is loaded in Redshift to run analytic queries.The target schema is also copied in S3. This ETL pipeline scheduled with Apache Airflow.
 
 The graph of pipeline is below
 
 
-![Image of airflow graph](/home/gizem/Desktop/udend-capstone/documentation/img/airflow_dag.png)
+![Image of airflow graph](https://raw.githubusercontent.com/gizunkar/data_engineering_projects/master/Project_6_capstone/img/dag.png)
 
 
 
